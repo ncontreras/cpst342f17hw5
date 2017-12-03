@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Contact</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -12,14 +12,35 @@
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 100%;
+        height: 80%;
         margin: 0;
         padding: 0;
       }
     </style>
   </head>
   <body>
+  	<header>
+      <div class="container">
+        Contact Page
+      </div>
+      <div class="sitemap">
+      	<nav>
+      		<ul>
+      			<li><a href="index.html">Home</a></li>
+      			<li><a href="about.html">About</a></li>
+      		</ul>
+      	</nav>
+      </div>
+    </header>
     <div id="map"></div>
+    <div id="contactInfo">
+	    <h1 id="h1">Contact Information</h1>
+	    <h2>Nancy Contreras</h2>
+	    <p>Loyola University Chicago</p>
+		<p>820 North Michigan Avenue</p>
+		<p>Chicago, IL 60611</p>
+	</div>
+
     <script>
       var map;
       function initMap() {
