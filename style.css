@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ *############################################
+ *########## END CSS RESET ###################
+ *############################################
+ */
+
+
+body {
+	font-size: 16px;
+}
+
+header {
+	background: #96281B;
+	padding: 20px 0;
+	margin-bottom: 50px;
+	color: white;
+	font-family: 'Abel', sans-serif;
+}
+
+header .sitemap {
+	float: right;
+	padding-right: 50px;
+}
+
+a{
+	color: #FDE3A7;
+}
+
+a.visited{
+	color: #E9D460;
+}
+
+main{
+	width: 1000px;
+	margin: 0 auto;
+	font-family: 'Abel', sans-serif;
+}
+
+h1 {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	text-align: left;
+	/*background-color: yellow; added color to visually confirm column sizes*/
+	color: #336E7B;
+	font-family: 'Abel', sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	
+}
+
+h2 {
+	color: #336E7B;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+	/*background-color: red; added color to visually confirm column sizes*/
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Abel', sans-serif;
+	margin-bottom: 30px; /* 30px is required*/
+	line-height: 25px;
+	/*background: pink; added color to visually confirm column sizes*/
+}
+
+footer {
+	background: #013243;
+	padding: 20px 0;
+	color: white;
+	font-family: 'Abel', sans-serif;
+}
+
+footer .sitemap {
+  float: right;
+  padding-right: 50px;
+}
+
+/*###################
+######### GRID ######
+#####################*/
+
+.col {
+	margin-left: 0;
+	float: left;
+}
+
+.col-1 {
+	width: 8.3%;
+}
+
+.col-2 {
+	width: 16.6%;
+}
+
+.col-3 {
+	width: 24.9%;
+}
+
+.col-4 {
+	width: 33.2%;
+}
+
+.col-5 {
+	width: 41.5%;
+}
+
+.col-6 {
+	width: 49.8%;
+}
+
+.col-7 {
+	width: 58.1%;
+}
+
+.col-8 {
+	width: 66.4%;
+}
+
+.col-9 {
+	width: 74.7%;
+}
+
+.col-10 {
+	width: 83%;
+}
+
+.col-11 {
+	width: 91.3%;
+} 
+
+/*col 12 is 100% of the page*/
+
+.row {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.row::after {
+	content:"";
+	display: block;
+	clear:both;
+}
+
+/*############# RESPONSIVENESS #################*/
+@media (max-width: 1000px) {
+	* { width: 100% !important}
+}
