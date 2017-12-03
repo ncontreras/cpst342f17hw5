@@ -1,8 +1,22 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
 		<title>Contact</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<style>
+	      /* Always set the map height explicitly to define the size of the div
+	       * element that contains the map. */
+	      #map {
+	        height: 100%;
+	      }
+	      /* Optional: Makes the sample page fill the window. */
+	      html, body {
+	        height: 100%;
+	        margin: 0;
+	        padding: 0;
+	      }
+	    </style>
 		<link href="css/contact.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	</head>
@@ -23,6 +37,8 @@
 	    </header>
 
 		<main>
+			<div id="map"></div>
+
 			<div class="container">
 				<div class="row">
 					<div class="col col-4">
@@ -70,5 +86,16 @@
 		</footer>
 	    
 	    <!-- <script src="script.js"></script>     -->
+	    <script>
+	      var map;
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	          center: {lat: -34.397, lng: 150.644},
+	          zoom: 8
+	        });
+	      }
+	    </script>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-B7FWcg9eYMSK20hfr2d7xvpIcR79pwo&callback=initMap"
+    		async defer></script>
 	</body>
 </html>
