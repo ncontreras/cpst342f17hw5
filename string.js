@@ -12,7 +12,7 @@ var main = function () {
 
             $(document).ready(function(){
 
-            	let $promise = $.get('https://ellypost.com/courses/453/ajax-lab/actions.php', parseInt($(".userPrompt input").val("")));
+            	let $promise = $.get('https://ellypost.com/courses/453/ajax-lab/actions.php', {'word-count': parseInt($(".userPrompt input").val(""))});
             	$promise
             		.done(function(r){
             			console.log("The promise was successful", r);
