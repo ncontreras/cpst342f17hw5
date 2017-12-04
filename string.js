@@ -11,7 +11,7 @@ var main = function () {
             $(".userPrompt input").val("");
 
             $(document).ready(function(){
-				$.post('https://ellypost.com/courses/453/ajax-lab/actions.php', $(".userPrompt input").val(""), function(response){
+				$.post('https://ellypost.com/courses/453/ajax-lab/actions.php', parseInt($(".userPrompt input").val("")), function(response){
 					console.log('We received a response', response);
 				});
 			});
