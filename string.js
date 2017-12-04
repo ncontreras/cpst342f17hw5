@@ -11,9 +11,16 @@ var main = function () {
             $(".userPrompt input").val("");
 
             $(document).ready(function(){
-				$.get('https://ellypost.com/courses/453/ajax-lab/actions.php', (word-count: parseInt($(".userPrompt input").val(""))), function(response){
-					console.log('We received a response', response);
-				});
+
+            	let $promise = $.get('https://ellypost.com/courses/453/ajax-lab/actions.php', parseInt($(".userPrompt input").val(""));
+            	$promise
+            		.done(function(r){
+            			console.log("The promise was successful", r);
+            		})
+
+            		.fail(function(err){
+            			console.error("The promise was not succesful", err);
+            		})
 			});
         }
     };
