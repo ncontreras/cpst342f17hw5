@@ -16,10 +16,12 @@ var main = function () {
             	$promise
             		.done(function(r){
             			console.log("The promise was successful", r);
+            			$("#response").text(JSON.parse(r));
             		})
 
             		.fail(function(err){
             			console.error("The promise was not succesful", err);
+            			$("#response").text("The request was not succesful");
             		})
 			});
         }
